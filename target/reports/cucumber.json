@@ -1,0 +1,127 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-02-29T20:48:12.790Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1039682400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.AddAccountStepDefinition.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.LoginStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "- User should be able to login with valid credentials from Db",
+        "description": "",
+        "id": "codefios-page-login-functionality-validation-with-data-from-mysql-server;--user-should-be-able-to-login-with-valid-credentials-from-db",
+        "after": [
+          {
+            "result": {
+              "duration": 152985100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1398864100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on codefios login page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_is_on_codefios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User enters \"username\" from mysql database",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User enters \"password\" from mysql database",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User clicks on sign in button",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User should be landing on dashboard page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_should_be_landing_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@codefiosFeature"
+          },
+          {
+            "name": "@codefiosLoginDbScenario1"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Codefios page login functionality validation with data from MySQL server",
+    "description": "",
+    "id": "codefios-page-login-functionality-validation-with-data-from-mysql-server",
+    "keyword": "Feature",
+    "uri": "classpath:features/CodefiosLoginDataFromDatabase.feature",
+    "tags": [
+      {
+        "name": "@codefiosFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
